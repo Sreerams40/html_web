@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Machine</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFD93B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      background: #FFD93B;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #2C2C54;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: white;
+      background: #E63946;
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .joystick-container {
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .joystick-base {
+      width: 120px;
+      height: 80px;
+      background: #444;
+      border-radius: 10px;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .joystick-handle {
+      width: 30px;
+      height: 30px;
+      background: #0066FF;
+      border-radius: 50%;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .button {
+      width: 15px;
+      height: 15px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+    }
+
+    .warning-icon {
+      width: 30px;
+      height: 30px;
+      background: yellow;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+    }
+
+    .warning-icon::after {
+      content: '!';
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .emoji-container {
+      margin-top: 20px;
+    }
+
+    .emoji {
+      font-size: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">THIS AWESOME MACHINE</div>
+    <div class="title" style="color: #E63946;">IS GETTING A POWERUP!</div>
+    <div class="subtitle">Don't fret, it'll be back for more fun soon.</div>
+    <div class="joystick-container">
+      <div class="joystick-base">
+        <div class="joystick-handle"></div>
+        <div class="button"></div>
+      </div>
+      <div class="warning-icon"></div>
+    </div>
+    <div class="emoji-container">
+      <span class="emoji">😊</span>
+      <span class="emoji">😂</span>
+    </div>
+  </div>
+</body>
+</html>
